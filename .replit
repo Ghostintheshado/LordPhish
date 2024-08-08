@@ -1,0 +1,17 @@
+# Specifies the main entry point for the project
+entrypoint = "main.py" 
+
+# Defines the Python version to use
+modules = ["python-3.10:v18-20230807-322e88b"]
+
+# Configuration for Nix package manager
+[nix]
+channel = "stable-23_05" 
+
+# Configuration for running unit tests
+[unitTest]
+language = "python3"
+
+# Configuration for importing from GitHub
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
